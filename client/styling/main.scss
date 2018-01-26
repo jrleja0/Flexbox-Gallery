@@ -1,0 +1,21 @@
+/*///
+ Main Components
+*////
+
+body {
+
+  /*///
+   MAIN (Footer) Styling
+  *////
+
+    .footer-text {
+      @extend .main-font;
+      background-color: rgba(27, 30, 209, 0.8);
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      padding: 6px;
+      margin-bottom: 0;
+    }
+
+  }
