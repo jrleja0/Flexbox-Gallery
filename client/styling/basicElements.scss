@@ -5,8 +5,11 @@
 // bold
 
 // dark
+$dark-blue: #081242;
+$dark-violet: #1d0154;
 
 // light
+$lightest-grey: #dee1ed;
 
 // translucent
 $light-bright-blue-rgba6: rgba(0, 216, 255, 0.6);
@@ -16,7 +19,14 @@ $blue-bold-rgba8: rgba(27, 30, 209, 0.8);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: black;
+  color: $lightest-grey;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 
 * {
@@ -27,6 +37,15 @@ $blue-bold-rgba8: rgba(27, 30, 209, 0.8);
 
 body {
   @extend .main-font;
+  background-color: $dark-blue;
+
+  img {
+    // visibility: hidden;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+  }
 
   .div-img-cover {
     position: absolute;
@@ -36,4 +55,24 @@ body {
     left: 0;
   }
 
+}
+
+/*///
+ Flexbox Mixins
+*////
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
 }
