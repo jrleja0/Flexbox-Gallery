@@ -9,6 +9,10 @@ const Main = props => {
     <div>
       <div>
         <h1>Image Gallery</h1>
+        <div className="menu-options">
+          <a role="button" tabIndex="0" onClick={() => console.log('1')}>Flex 1</a>
+          <a role="button" tabIndex="0" onClick={() => console.log('2')}>Flex 2</a>
+        </div>
       </div>
       {props.children}
       <div>

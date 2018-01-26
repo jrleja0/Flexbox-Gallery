@@ -5,17 +5,69 @@
 body {
 
   /*///
+   MAIN (Header) Styling
+  *////
+
+  .menu-options {
+    @include flexbox();
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  /*///
    MAIN (Footer) Styling
   *////
 
     .footer-text {
       @extend .main-font;
       background-color: rgba(27, 30, 209, 0.8);
-      color: white;
       font-size: 18px;
       text-align: center;
-      padding: 6px;
+      padding: 10px;
       margin-bottom: 0;
     }
 
+  /*///
+   GALLERY Styling
+  *////
+
+  .gallery-container {
+    background-color: $dark-violet;
+    height: 250px;
+    width: 100%;
+    @include flexbox();
+    flex-flow: row nowrap;
+    justify-content: center;
   }
+
+  .basic-tile {
+    width: 25%; // 200px;
+    height: 200px;
+    @include border-radius(20px);
+  }
+
+  .blue-tile {
+    @extend .basic-tile;
+    @include flex(1 2);
+    // margin: auto;
+  }
+
+  .green-tile {
+    @extend .basic-tile;
+    @include flex(1 2);
+    // margin: auto;
+  }
+
+  .red-tile {
+    @extend .basic-tile;
+    @include flex(1 2);
+    // margin: auto;
+  }
+
+  .yellow-tile {
+    @extend .basic-tile;
+    @include flex(1 2);
+    // margin: auto;
+  }
+
+}
