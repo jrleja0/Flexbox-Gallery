@@ -6,6 +6,7 @@ import React from 'react';
 const Gallery1 = props => {
   return (
     <div>
+      <div className="gallery-container1A">
       <div className="gallery-container1">
         <div>
           <img className="red-tile1" src="/assets/red_tile.jpg" alt="" />
@@ -30,6 +31,7 @@ const Gallery1 = props => {
           <img className="yellow-tile1" src="/assets/yellow_tile.jpg" alt="" />
         </div>
       </div>
+    </div>
     </div>
   );
 };

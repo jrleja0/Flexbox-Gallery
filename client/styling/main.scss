@@ -44,16 +44,29 @@ body {
   ///** Gallery 1 **///
   ///               ///
 
+  .gallery-container1A {
+    background-color: $dark-violet;
+    height: 632px;
+    width: 95%;
+    margin: auto;
+    @include flexbox();
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
   .gallery-container1 {
     background-color: $dark-violet;
     height: 200px;
     width: 95%;
     margin: auto;
-    padding: 8px;
+    // padding: 8px;
+    // padding: 0 8px;
     @include flexbox();
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    @include flex(1 2);
   }
 
   .basic-tile1 {
