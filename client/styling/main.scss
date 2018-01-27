@@ -122,7 +122,7 @@ body {
     @include flex(0 1 200px);
   }
 
-  .blue-tile2 {
+  .red-tile2, .green-tile2 {
     @include flex(2 1 300px);
   }
 
